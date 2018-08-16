@@ -28,7 +28,7 @@ public class Client implements Runnable {
             if (beer != null) {
                 logger.info(name + " drinking " + beer.getSize() + "ml beer!");
                 try {
-                    Thread.sleep((int)(beer.getSize() * this.speed));
+                    Thread.sleep((int) (beer.getSize() * this.speed));
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -36,7 +36,7 @@ public class Client implements Runnable {
                 drinkedBeers++;
                 logger.info(name + " finished his " + drinkedBeers + " beer!");
             } else {
-                logger.info(name +  " - no beer! I'm waiting for staff!");
+                logger.info(name + " - no beer! I'm waiting for staff!");
                 try {
                     Thread.sleep(5 * 1000);
                 } catch (InterruptedException e) {
@@ -49,6 +49,6 @@ public class Client implements Runnable {
 
     @Override
     public String toString() {
-        return "client " + this.name + " can drink " + this.capacity + " ml beer with speed " + (this.speed * 10 ) +  "ml/s";
+        return "client " + this.name + " can drink " + this.capacity + " ml beer with speed " + (this.speed * 10) + "ml/s";
     }
 }

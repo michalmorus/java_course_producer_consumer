@@ -12,6 +12,7 @@ public class Table {
     private boolean party = true;
     private int totalBeers = 0;
     private double totalCapacity = 0;
+
     synchronized void addBeers(Beer[] beers) {
         this.beers.addAll(Arrays.asList(beers));
         notifyAll();

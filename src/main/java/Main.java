@@ -12,8 +12,8 @@ public class Main {
         final Table table = new Table();
         Client[] clients = {
                 new Client("Józek", table, 5500, 3),
-                new Client("Roman", table,1000, 15),
-                new Client("Tadeusz", table,8000, 7)
+                new Client("Roman", table, 1000, 15),
+                new Client("Tadeusz", table, 8000, 7)
         };
         Staff staff = new Staff(table);
 
